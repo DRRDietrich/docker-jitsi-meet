@@ -58,7 +58,7 @@ or to use jigasi too: ``docker-compose -f docker-compose.yml -f jigasi.yml -f ji
 This setup used to have default passwords for intetrnal accounts used across components. In order to make the default setup
 secure by default these have been removed and the respective containers won't start without having a password set.
 
-Strong passwordds may be generated as follows: `./gen-passwords.sh`
+Strong passwords may be generated as follows: `./gen-passwords.sh`
 This will modify your `.env` file (a backup is saved in `.env.backup`) and set strong passwords for each of the
 require options. Passwords are  generated using `openssl rand -hex 16` .
 
